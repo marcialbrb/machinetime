@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta content='width=device-width, initial-scale=1' name='viewport'/ charset="utf-8">
+        <title>Machine Time: Travel through web</title>
+        
+        <style>
+        body{
+        color: white;
+        background-color: blue;
+        font-family: Lucida Console;
+        width: auto;
+        
+        }
+        .header{
+        background-color: black;
+        width: 100%;
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .web1, .web2{
+            width: 49%;
+            height: 100px;
+            background-color: black;
+            text-align: center;
+            border: 2px solid rgba(3, 3, 3, 0.30);
+        }
+        .web1{
+           position: relative;
+           bottom: 30px;
+           
+        }
+        .web2{
+            position: relative;
+            bottom: 134px;
+            left: 51%;
+        }
+        .barra{
+            position: relative;
+            font-weight: bolder;
+            animation-name: blinker;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            bottom: 44px;
+            left: 630px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        a:active,a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        @keyframes blinker{
+            0%{opacity: 1.0;}
+            50%{opacity: 0.0;}
+            100%{opacity: 1.0;}
+        }
+        
+        </style>
+    </head>
+
+    <body>
+
+        <div class="header">
+            <h1>Machine Time</h1>
+        </div>
+        
+        <h2>> Where do you want to travel? Choose one:</h2>
+
+        <div class="barra">
+            <h2>|</h2>
+        </div>
+
+        <div class="web1">
+            <a  href="Project-Google.html">
+                <img src="googlebackground.jpg" alt="Google Background">
+            </a> 
+        </div>
+    
+        <div class="web2">
+            <a href="Project-Facebook.html">
+                <img src="facebookbackground.jpg" alt="Facebook Background">
+            </a>
+        </div>
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

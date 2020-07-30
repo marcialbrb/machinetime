@@ -4,17 +4,189 @@
         <title>Facebook</title>
         
         <style>
-            body{
-                background-color:#3b5998;
+            body{ 
+                background-color: white;
+                font-size: 16px;
+                color: black;
+                font-family: Arial, sans-serif;
             }
-            h1{
-                color: white;
+            .banner{
+                background-color:#3b5998;
+                border: 1px solid black;
+                padding: 2%;
+            }
+            .logobox{
+               text-align: right;
+            }
+            #logo{
+                font-size: 2em;
+                margin-bottom: 0px;
+                color: #537acf;
+ 
+            }
+            #text_logo{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                color: white;  
+            }
+            .container_main{
+                background-color: white;
+                border: 1px solid #3b5998;
+                padding: 4px;
+            }
+            .box_left{
+                border: 1px dashed #3b5998;
+                padding: 4px;
+                margin: 2px;
+                display: flex;
+                justify-content: left;
+                text-align: right;
+                overflow: hidden;
+                float: left;
                 
             }
+            .boton_login_box{
+                text-align: center;
+                
+            }
+            .welcome{
+            background-color: #3b5998;
+            color: white;
+            font-weight: bold;
+            padding: 4px;
+            margin: 2px;
+            overflow: hidden;
+            }
+            .container_text{
+            border: 1px solid #3b5998;
+            padding: 15px;
+            margin: 2px;
+            overflow: hidden;
+            
+            }
+            #text_welcome{
+                text-align: center;
+                margin: 4px;
+            }
+            .boton1,.boton2{
+                background-color: #3b5998;
+                color: white;
+                border: 1px solid #11295f;
+                padding: 5px;
+                margin: 10px;
+                text-align: center;
+
+            }
+            .boton_login_box_text{
+                text-align: center;
+            }
+            .copyright{
+                text-align: center;
+                font-size: 12px;
+                line-height: 4px;
+                margin: 2%;
+            }
+            .urls{
+                color: #537acf;
+                word-spacing: 10px;
+            }
+            a:link,a:visited{
+                text-decoration: none;
+                color:unset;
+            }
+            
+            .botonbox{
+                background-color:#537acf;
+                border: 1px solid #264fa8;
+                color: white;
+                margin-top: 2px;
+            }
+
+            @media screen and (max-width:600px) {
+                .box_left{
+                    float:none;
+                    display: flex;
+                    justify-content: center;
+                    text-align: right;
+                    overflow: hidden;
+                }
+                
+            }
+        
+            
+
         </style>
+      
     </head>
 
     <body>
-        <h1>SOON.JPG</h1>
+
+        <div class="banner">
+            <div class="logobox">
+                    <b id="logo">[ thefacebook ]</b><br>
+                    <div id="text_logo"><a href="">login</a> <a href="">register</a> <a href="">about</a></div>
+            </div>
+        
+        </div>
+
+        <div class="container_main"> 
+
+            <div class="box_left">
+
+                <form action="url">
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="lname">Password:</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <div class="boton_login_box">
+                        <input type="submit" value="register" class="botonbox"><br>
+
+                        <input type="submit" value="login" class="botonbox">
+                    </div>
+                </form>
+
+            </div>
+            
+            <div class="welcome">
+                <span>Welcome to Thefacebook!</span>
+            </div>
+            
+            <div class="container_text">
+                    <h3 id=text_welcome>[ Welcome to Thefacebook! ]</h3><br>
+                <div class="text">
+                    <p>Thefacebook is an online directory that connects people through social networks at colleges.</p>
+                    <p>We have opened up Thefacebook for popular consumption at <b>Harvard University</b></p>
+                    <p>You can use Thefacebook to:</p>
+                    <ul>
+                        <li>Search for people at your school</li>
+                        <li>Find out who are in your classes</li>
+                        <li>Look up your friend's friends</li>
+                        <li>See a visualization of your social network</li>
+                    </ul>
+                    <p>To get started, click below to register. If you have alreaady registered, you can log in.</p>
+                </div>
+                <div class="boton_login_box_text">
+                    <input type="submit" value="Register" class="botonbox">
+                    <input type="submit" value="Login" class="botonbox">
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="urls">
+                    <a href=""> about</a>
+                    <a href=""> contact</a>
+                    <a href=""> faq</a>
+                    <a href=""> terms</a>
+                    <a href=""> privacy</a>
+                </div>
+
+                <p>a Mark Zuckerberg production</p>
+                <p>Thefacebook © 2004</p>
+            </div>
+            
+        </div>
+
     </body>
 </html>

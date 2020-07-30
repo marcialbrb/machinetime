@@ -1,116 +1,78 @@
 <!DOCTYPE html>
-<html>
-
-    <head>
-        <meta content="width=device-width, initial-scale=1" name="viewport"/ charset="utf-8">
-        <title>Machine Time: Travel through web</title>
-        
+<HTML>
+    <HEAD>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/ charset="utf-8">
+        <title> Machine Time</title>
         <style>
         body{
-        color: white;
-        background-color: blue;
-        font-family: Lucida Console;
-        width: auto;
-        
-        }
-        .header{
-        background-color: black;
-        width: 100%;
-        font-size: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
+            background-color: blue;
+            width: auto;
+            font-size: 16px;
+            color: white;
+            font-family: Lucida Console;
 
-        .web1, .web2{
-            width: 49%;
-            height: 100px;
-            background-color: black;
-            text-align: center;
-            border: 2px solid rgba(3, 3, 3, 0.30);
         }
-        .web1{
-           position: relative;
-           bottom: 30px;
+        .contenedor{
+            /*width: 100%;
+            height: 100%;*/
+            background-color: black;
+        }
+        .banner{
+            background-color: white;
+            font-size: 48px;
+            font-weight: bolder;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;  
+        }
+        #text1{
+            text-align: left;
+            margin: 1rem;
+        }
+       
+        .web1 , .web2{
+           
+           margin: 1rem auto;
+           padding: 1rem;
+           border: 2px solid #ccc;
+           width: 50%;
+           text-align: center;
            
         }
+       .web1{
+            background-color: white;
+        }
         .web2{
-            position: relative;
-            bottom: 134px;
-            left: 51%;
+            background-color: #3b5998;
         }
-        .barra{
-            position: relative;
-            font-weight: bolder;
-            animation-name: blinker;
-            animation-duration: 1s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            bottom: 44px;
-            left: 630px;
-        }
-        a{
-            text-decoration: none;
-        }
-
-        a:active,a:visited {
-            color: white;
-            text-decoration: none;
-        }
-        @keyframes blinker{
-            0%{opacity: 1.0;}
-            50%{opacity: 0.0;}
-            100%{opacity: 1.0;}
-        }
-        
         </style>
-    </head>
-
-    <body>
-
-        <div class="header">
-            <h1>Machine Time</h1>
-        </div>
-        
-        <h2>> Where do you want to travel? Choose one:</h2>
-
-        <div class="barra">
-            <h2>|</h2>
-        </div>
-
-        <div class="web1">
-            <a  href="Project-Google.html">
-                <img src="googlebackground.jpg" alt="Google Background">
-            </a> 
-        </div>
+    </HEAD>
     
-        <div class="web2">
-            <a href="Project-Facebook.html">
-                <img src="facebookbackground.jpg" alt="Facebook Background">
-            </a>
+    <body>
+        <div class="contenedor">
+            
+            <div class="banner">
+                <p>Machine Time</p>
+            </div>
+            
+            <div id="text1">
+                <p>> Where do you want to travel? Choose one:</p>
+            </div>
+
+              
+                <div class="web1">
+                    <a  href="Project-Google.html">  
+                        <span>GOOGLE 1999</span>
+                    </a>
+                </div>
+            
+            <div class="web2">
+                <a  href="Project-Facebook.html">
+                    <SPAN>FACEBOOK 2004</SPAN>
+                </a> 
+            </div>
         </div>
-
-
     </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</html>
+</HTML>
